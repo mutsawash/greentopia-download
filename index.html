@@ -3,95 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Download the Greentopia app - empowering communities with plant knowledge and climate action." />
-  <title>Greentopia | Download App</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-900">
+  <meta name="description" content="Download Greentopia - a plant and nursery app that supports climate change goals and sustainable living." />
+  <title>Greentopia App | Download</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
-  <!-- Header -->
-  <header class="bg-green-700 text-white py-6 shadow-md">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-3xl font-bold">🌱 Greentopia</h1>
-      <p class="text-lg mt-2">Your plant companion — anytime, anywhere</p>
-    </div>
+    header {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #2f855a;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    a.button {
+      display: inline-block;
+      background: #2f855a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #276749;
+    }
+
+    /* Floating Download Button */
+    .floating-download {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #2f855a;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+      z-index: 999;
+    }
+
+    .floating-download img {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+    }
+
+    .floating-download:hover {
+      background: #276749;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #2f855a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Greentopia google logo.png" alt="Greentopia Logo" />
+    <h1>Greentopia</h1>
+    <p>Your companion for plants, sustainability, and a greener tomorrow 🌱</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="container mx-auto px-6 py-12 text-center">
-    <img src="/greentopia-icon.png" alt="Greentopia App Icon" class="mx-auto w-28 h-28 mb-6 rounded-xl shadow-lg" />
-    <h2 class="text-2xl md:text-3xl font-bold mb-4">Download the Greentopia App</h2>
-    <p class="max-w-xl mx-auto text-gray-700 mb-6">
-      Greentopia helps you identify plants, learn how to care for them, and connect with nature — all in one place.
-      Whether you are a plant lover or a farmer, this app gives you the tools you need to grow with confidence.
-    </p>
-    <a href="/greentopia.apk" download class="bg-green-700 text-white px-6 py-3 rounded-full shadow hover:bg-green-800 transition">
-      ⬇ Download for Android
-    </a>
-  </section>
-
-  <!-- Screenshots Section -->
-  <section class="bg-white py-12">
-    <div class="container mx-auto px-6">
-      <h3 class="text-2xl font-bold text-center mb-8">App Screenshots</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <img src="/screenshot1.png" alt="Screenshot 1" class="rounded-xl shadow-lg">
-        <img src="/screenshot2.png" alt="Screenshot 2" class="rounded-xl shadow-lg">
-        <img src="/screenshot3.png" alt="Screenshot 3" class="rounded-xl shadow-lg">
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="container mx-auto px-6 py-12">
-    <h3 class="text-2xl font-bold text-center mb-6">Why Choose Greentopia?</h3>
-    <div class="grid md:grid-cols-3 gap-6 text-center">
-      <div class="bg-green-100 p-6 rounded-xl shadow">
-        <h4 class="font-bold mb-2">🌿 Plant Care Tips</h4>
-        <p>Learn how to water, fertilize, and keep your plants healthy with expert advice.</p>
-      </div>
-      <div class="bg-green-100 p-6 rounded-xl shadow">
-        <h4 class="font-bold mb-2">📸 Easy Identification</h4>
-        <p>Use your camera to identify plants and get instant care guides.</p>
-      </div>
-      <div class="bg-green-100 p-6 rounded-xl shadow">
-        <h4 class="font-bold mb-2">📊 Track Your Growth</h4>
-        <p>Keep a digital diary of your plants’ progress and stay organized.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Climate Change Section -->
-  <section class="bg-green-50 py-12">
-    <div class="container mx-auto px-6 max-w-3xl text-center">
-      <h3 class="text-2xl font-bold mb-4">🌍 Supporting Climate Change Goals</h3>
-      <p class="text-gray-700">
-        Greentopia aligns with the UN Sustainable Development Goals by encouraging tree planting, 
-        improving biodiversity awareness, and promoting sustainable gardening practices.
-        By using Greentopia, you take part in reducing carbon footprints and making greener spaces a reality.
+  <div class="container">
+    <section class="section">
+      <h2>About the App</h2>
+      <p>
+        Greentopia helps you discover plants, get expert plant care tips, connect with local nurseries,
+        and even order plants directly from your phone. The app is designed to make plant care easy
+        and fun, while promoting green spaces in your home and community.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section class="container mx-auto px-6 py-12 text-center">
-    <h3 class="text-2xl font-bold mb-4">About Greentopia</h3>
-    <p class="text-gray-700 mb-4">
-      Greentopia is proudly brought to you by 
-      <a href="https://plant360nursery.co.zw" class="text-green-700 font-semibold underline hover:text-green-900">
-        Plant 360 Nursery
-      </a>.
-    </p>
-    <p class="text-gray-700">
-      Our mission is to inspire a love for plants and nature while helping communities 
-      grow greener and more sustainable futures.
-    </p>
-  </section>
+    <section class="section">
+      <h2>Why It Matters</h2>
+      <p>
+        Greentopia aligns with global <strong>Climate Change Goals</strong> by encouraging tree planting,
+        urban greening, and sustainable landscaping. Every plant you grow contributes to cleaner air,
+        healthier soil, and a better future for our planet.
+      </p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-700 text-white py-6 mt-12 text-center">
-    <p>&copy; 2025 Greentopia. All rights reserved.</p>
+    <section class="section">
+      <h2>App Screenshots</h2>
+      <div class="screenshots">
+        <img src="Screenshot_20250915-212254_Chrome.jpg" alt="Screenshot 1">
+        <img src="Screenshot_20250915-212303_Chrome.jpg" alt="Screenshot 2">
+        <img src="Screenshot_20250915-212316_Chrome.jpg" alt="Screenshot 3">
+        <img src="Screenshot_20250915-212326_Chrome.jpg" alt="Screenshot 4">
+        <img src="Screenshot_20250915-212335_Chrome.jpg" alt="Screenshot 5">
+        <img src="Screenshot_20250916-063419_Chrome.jpg" alt="Screenshot 6">
+        <img src="Screenshot_20250916-063432_Chrome.jpg" alt="Screenshot 7">
+        <img src="Screenshot_20250916-063441_Chrome.jpg" alt="Screenshot 8">
+        <img src="Screenshot_20250916-063454_Chrome.jpg" alt="Screenshot 9">
+        <img src="Screenshot_20250916-063502_Chrome.jpg" alt="Screenshot 10">
+        <img src="Screenshot_20250916-063511_Chrome.jpg" alt="Screenshot 11">
+        <img src="Screenshot_20250916-063524_Chrome.jpg" alt="Screenshot 12">
+        <img src="Screenshot_20250916-063537_Chrome.jpg" alt="Screenshot 13">
+        <img src="Screenshot_20250916-063544_Chrome.jpg" alt="Screenshot 14">
+        <img src="Screenshot_20250916-063551_Chrome.jpg" alt="Screenshot 15">
+        <img src="Screenshot_20250916-063559_Chrome.jpg" alt="Screenshot 16">
+        <img src="Screenshot_20250916-063619_Chrome.jpg" alt="Screenshot 17">
+      </div>
+    </section>
+
+    <section class="section" style="text-align:center;">
+      <a href="greentopia.apk" download class="button">⬇ Download Greentopia App</a>
+    </section>
+  </div>
+
+  <footer>
+    Brought to you by <a href="https://plant360nursery.co.zw" target="_blank">Plant 360 Nursery</a>
   </footer>
+
+  <!-- Floating Download Button -->
+  <a href="greentopia.apk" download class="floating-download">
+    <img src="WhatsApp Image 2025-08-18 at 21.14.27_6f98889f logo.jpg" alt="App Icon" />
+    Download
+  </a>
 
 </body>
 </html>
+
